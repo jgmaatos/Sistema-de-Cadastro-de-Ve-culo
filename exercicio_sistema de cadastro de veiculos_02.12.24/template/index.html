@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Cadastro de Veículos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Cadastro de Veículo</h1>
+
+        <!-- Formulário de Cadastro -->
+        <form id="cadastroForm">
+            <label for="placa">Placa:</label>
+            <input type="text" id="placa" name="placa" required>
+
+            <label for="marca">Marca:</label>
+            <input type="text" id="marca" name="marca" required>
+
+            <label for="modelo">Modelo:</label>
+            <input type="text" id="modelo" name="modelo" required>
+
+            <label for="ano">Ano:</label>
+            <input type="number" id="ano" name="ano" required>
+
+            <button type="submit">Cadastrar</button>
+        </form>
+
+        <!-- Tabela de Veículos Cadastrados -->
+        <h2>Veículos Cadastrados</h2>
+        <table id="tabelaVeiculos">
+            <thead>
+                <tr>
+                    <th>Placa</th>
+                    <th>Marca</th>
+                    <th>Modelo</th>
+                    <th>Ano</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Aqui os dados serão exibidos dinamicamente -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
